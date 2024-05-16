@@ -116,7 +116,7 @@ export default function App() {
     setMapObj(initialMapObj)
 
     //init layers
-    fetch("http://164.90.130.0/api/pmtiles")
+    fetch("https://www.urban-heat.duckdns.org/api/pmtiles")
       .then((res) => res.json())
       .then((data) => {
         setLayers(data)
