@@ -116,7 +116,7 @@ export default function App() {
     setMapObj(initialMapObj)
 
     //init layers
-    fetch("https://www.urban-heat.duckdns.org/api/pmtiles")
+    fetch("https://zkcygezgkswabugyieuz.supabase.co/rest/v1/pmtiles?select=*&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InprY3lnZXpna3N3YWJ1Z3lpZXV6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU5MDk0MTIsImV4cCI6MjAzMTQ4NTQxMn0.41iJLd8aGYm5BSbwUANqNW1xSdxbONvSXVrqwp6yPSU")
       .then((res) => res.json())
       .then((data) => {
         setLayers(data)
